@@ -1,0 +1,67 @@
+<%= form_with(model: article, local: true) do |form| %>
+  <% if article.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(article.errors.count, "error") %> prohibited this article from being saved:</h2>
+
+      <ul>
+      <% article.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :deadline %>
+    <%= form.text_field :deadline %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.text_field :country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :typeofscholarship %>
+    <%= form.text_field :typeofscholarship %>
+  </div>
+
+  <div class="field">
+    <%= form.label :institute %>
+    <%= form.text_field :institute %>
+  </div>
+
+  <div class="field">
+    <%= form.label :benefits %>
+    <%= form.text_field :benefits %>
+  </div>
+
+  <div class="field">
+    <%= form.label :elgibilities %>
+    <%= form.text_field :elgibilities %>
+  </div>
+
+  <div class="field">
+    <%= form.label :process %>
+    <%= form.text_field :process %>
+  </div>
+
+  <div class="field">
+    <%= form.label :url %>
+    <%= form.text_field :url %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

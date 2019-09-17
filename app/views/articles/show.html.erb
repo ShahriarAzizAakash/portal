@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @article.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @article.description %>
+</p>
+
+<p>
+  <strong>Deadline:</strong>
+  <%= @article.deadline %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @article.country %>
+</p>
+
+<p>
+  <strong>Typeofscholarship:</strong>
+  <%= @article.typeofscholarship %>
+</p>
+
+<p>
+  <strong>Institute:</strong>
+  <%= @article.institute %>
+</p>
+
+<p>
+  <strong>Benefits:</strong>
+  <%= @article.benefits %>
+</p>
+
+<p>
+  <strong>Elgibilities:</strong>
+  <%= @article.elgibilities %>
+</p>
+
+<p>
+  <strong>Process:</strong>
+  <%= @article.process %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @article.url %>
+</p>
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>
