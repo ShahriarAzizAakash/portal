@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
   end
 
   # GET /articles/1
-  # GET /articles/1.json
+  # GET /articles/1.json ok
   def show
   end
 
